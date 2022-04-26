@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 100%;
+  max-width: 100%;
   width: 350px;
   margin-bottom: 30px;
 }
