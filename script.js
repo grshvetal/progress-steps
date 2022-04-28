@@ -21,7 +21,7 @@ prev.addEventListener('click', () => {
 })
 
 function update() {
-    // making circle active or not
+    // making circle active or non-active
     circles.forEach((circle, index) => {
         if (index < currentActive) {
             circle.classList.add('active')
@@ -34,6 +34,7 @@ function update() {
     const actives = document.querySelectorAll('.active')
     progress.style.width = (actives.length - 1)/(circles.length - 1)*100 + '%'
 
+    //making buttons disabled or enabled
     if (currentActive === 1) {
         prev.disabled = true
     } else if (currentActive === circles.length) {
